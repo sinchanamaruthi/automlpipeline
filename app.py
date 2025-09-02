@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-from preprocessing.cleaner import preprocess_data
-from models.trainer import train_and_select_model
+from preprocessing import preprocess_data
+from models import train_and_select_model
 
 st.title("Phase 1 AutoML Pipeline 🚀")
 
