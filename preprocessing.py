@@ -38,7 +38,7 @@ def detect_task_and_split(df: pd.DataFrame, test_size: float = 0.2, random_state
     preprocessor = ColumnTransformer(
         transformers=[
             ("num", numeric_transformer, num_cols),
-            ("cat", OneHotEncoder(handle_unknown="ignore", sparse=False), cat_cols),
+            ("cat",OneHotEncoder(handle_unknown="ignore", sparse_output=False), cat_cols),
         ]
     )
 
